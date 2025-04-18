@@ -4,41 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You-pet</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>YouPet</title>
 </head>
 
 <body>
     <header>
-        <h1>You-pet</h1>
-        <nav aria-label="Navegação principal">
-            <input type="search" placeholder="Pesquisar..." aria-label="Campo de pesquisa" />
-            <button type="submit">Pesquisar</button>
+        <h1>YouPet</h1>
+        <nav class="main-nav" aria-label="Navegação principal">
+            <input type="search" placeholder="Pesquisar..." aria-label="Campo de pesquisa"/>
+            <button class="btn" type="submit"><img id="search-img" src="search.png"></button>
         </nav>
     </header>
 
     <main>
         <section>
-            <h2>Vídeo Recomendado</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/7CFlzew9Bus?si=vDrVp8d-9RZ-MxCC"
+            <iframe src="https://www.youtube.com/embed/7CFlzew9Bus?si=vDrVp8d-9RZ-MxCC"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p>Número de visualizações: 21.030</p>
-            <p>Numero de likes: 0</p>
-            <p>Numero de dislikes: 0</p>
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <h2>Áudio Próprio</h2>
+            <div class="channel">
+                <p><img src="youtube.png" width="35" height="35" alt="Logo do canal do YouTube" /> Nome do canal </p>
+                <p>0 inscritos</p>
+            </div>
+            <div class="counters">
+                <p>Número de visualizações: 21.030</p>
+                <p>Numero de likes: 0</p>
+                <p>Numero de dislikes: 0</p>
+            </div>
+
             <!-- Botões de interação -->
             <div>
-                <button type="button" aria-label="Curtir vídeo">👍 Like</button>
-                <button type="button" aria-label="Não gostei do vídeo">👎 Dislike</button>
-                <button type="button" aria-label="Inscrever-se no canal">🔔 Inscrever-se</button>
+                <button class="btn" type="button" aria-label="Curtir vídeo">👍 Like</button>
+                <button class="btn" type="button" aria-label="Não gostei do vídeo">👎 Dislike</button>
+                <button class="btn" type="button" aria-label="Inscrever-se no canal">🔔 Inscrever-se</button>
             </div>
         </section>
 
         <section>
-            <h2>Áudio Próprio</h2>
-            <div>
-                <p><img src="youtube.png" width="35" height="35" alt="Logo do canal do YouTube" /> Nome do canal </p>
-                <p> 0 inscritos</p>
+            <div class="descricao">
                 <p>
                     A ciência recentemente descobriu que pessoas que evitam mandar mensagens de áudio para os outros
                     vivem mais,
@@ -58,3 +64,5 @@
 </body>
 
 </html>
+
+<!--- width="560" height="315"-->
