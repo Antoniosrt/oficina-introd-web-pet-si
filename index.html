@@ -1,60 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You-pet</title>
+    <link rel="stylesheet" href="style.css">
+    <title>YouPet</title>
 </head>
 
 <body>
     <header>
-        <h1>You-pet</h1>
-        <nav aria-label="Navegação principal">
+        <h1>YouPet</h1>
+        <nav class="main-nav" aria-label="Navegação principal">
             <input type="search" placeholder="Pesquisar..." aria-label="Campo de pesquisa" />
-            <button type="submit">Pesquisar</button>
+            <button class="btn" type="submit" aria-label="Buscar">
+                <img id="search-img" src="search.png" alt="Ícone de busca">
+            </button>
         </nav>
     </header>
 
     <main>
         <section>
-            <h2>Vídeo Recomendado</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/7CFlzew9Bus?si=vDrVp8d-9RZ-MxCC"
-                title="YouTube video player" frameborder="0"
+            <iframe 
+                src="https://www.youtube.com/embed/7CFlzew9Bus?si=vDrVp8d-9RZ-MxCC"
+                title="YouTube video player" 
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p>Número de visualizações: 21.030</p>
-            <p>Numero de likes: 0</p>
-            <p>Numero de dislikes: 0</p>
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+
+            <h2>Áudio Próprio</h2>
+
+            <div class="channel">
+                <p><img src="youtube.png" width="35" height="35" alt="Logo do canal do YouTube" /> Nome do canal</p>
+                <p>0 inscritos</p>
+            </div>
+
+            <div class="counters">
+                <p>Número de visualizações: 21.030</p>
+                <p>Número de likes: 0</p>
+                <p>Número de dislikes: 0</p>
+            </div>
+
             <!-- Botões de interação -->
             <div>
-                <button type="button" aria-label="Curtir vídeo">👍 Like</button>
-                <button type="button" aria-label="Não gostei do vídeo">👎 Dislike</button>
-                <button type="button" aria-label="Inscrever-se no canal">🔔 Inscrever-se</button>
+                <button class="btn" type="button" aria-label="Curtir vídeo">👍 Like</button>
+                <button class="btn" type="button" aria-label="Não gostei do vídeo">👎 Dislike</button>
+                <button class="btn" type="button" aria-label="Inscrever-se no canal">🔔 Inscrever-se</button>
             </div>
         </section>
 
-        <section>
-            <h2>Áudio Próprio</h2>
-            <div>
-                <p><img src="youtube.png" width="35" height="35" alt="Logo do canal do YouTube" /> Nome do canal </p>
-                <p> 0 inscritos</p>
-                <p>
-                    A ciência recentemente descobriu que pessoas que evitam mandar mensagens de áudio para os outros
-                    vivem mais,
-                    possuem a dopamina regulada, apresentam menos chances de desenvolver doenças cardiovasculares,
-                    apresentam
-                    imunidade à seborreia e candidíase anal, não ficam calvas ou impotentes, num efeito que vem sendo
-                    chamado de
-                    "tadalafila natural". Pare de mandar mensagem de áudio você também. Seja saudável!
-                </p>
-            </div>
+        <section class="descricao">
+            <h2>Descrição</h2>
+            <p>
+                A ciência recentemente descobriu que pessoas que evitam mandar mensagens de áudio para os outros vivem mais.
+            </p>
         </section>
     </main>
 
+    <script src="script.js"></script>
+
     <footer>
-        <p>&copy; 2025 You-pet. Todos os direitos reservados.</p>
+        <!-- Conteúdo do rodapé, se desejar -->
     </footer>
 </body>
-
 </html>
